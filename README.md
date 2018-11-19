@@ -1,4 +1,4 @@
-Yolov3-windows
+LargeImageDetect-yolo-windows
 ===============
 修改yolo-windows[源码](https://github.com/AlexeyAB/darknet)，添加超大图分割检测代码，可封装为lib,dll方便移植，提供模型实现航拍车辆检测.
 
@@ -13,12 +13,10 @@ Yolov3-windows
 		#define CUTHEI 512
 		#define CUTSTEP 512
 		```
-		
 		* 修改image.c
 		```C++
 		#define CUTSTEP 512
-		```
-		
+		```	
 	* 如若修改保存文件夹
 		* 修改darknet.c
 
@@ -27,7 +25,6 @@ Yolov3-windows
 		char dirPath[] = "x64\\data\\testSplit\\";
 		char imgSrcFilename[] = "x64\\data\\panorama.jpg";
 		```		
-
 * 将终端操作修改为测试文件夹，可以实现自动测试
 	* 如若修改测试文件夹
 		* 修改darknet.c
@@ -36,7 +33,6 @@ Yolov3-windows
 		//Test
 		char filename[] = "x64\\data\\testSplit";
 		```
-		
 * 可以将代码封装为lib,dll，方便移植
 * 模型只用来检测航拍车辆，[下载](https://pan.baidu.com/s/1VoOpBiWfq2DWsn7kMTZZiw)后放入build\darknet\x64文件夹下
 * 运行显示多幅图，最后一张为超大图检测效果，若不显示中间图，修改detector.c中run_detector
@@ -44,7 +40,6 @@ Yolov3-windows
 ```C++
 int dont_show = 1;
 ```
-
 
 
 环境配置
