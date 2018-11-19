@@ -49,4 +49,4 @@ int dont_show = 1;
 
 More Details
 -------------
-有关滑窗裁剪，文件命名欢迎访问[博客](https://www.cnblogs.com/qinguoyi/p/8507803.html).
+有关滑窗裁剪，文件命名欢迎访问[博客](https://www.cnblogs.com/qinguoyi/p/9983858.html).
