@@ -1,6 +1,6 @@
 LargeImageDetect-yolo-windows
 ===============
-修改yolo-windows[源码](https://github.com/AlexeyAB/darknet)，添加超大图分割检测代码，可封装为lib,dll方便移植，提供模型实现航拍车辆检测.
+修改yolo-windows[源码](https://github.com/AlexeyAB/darknet)，添加高分辨率图片分割检测代码，可封装为lib,dll方便移植，提供模型实现航拍车辆检测.
 
 项目要点
 --------
