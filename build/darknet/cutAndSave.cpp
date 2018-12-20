@@ -6,7 +6,7 @@
 #include <io.h>
 
 #define _CRT_SECURE_NO_WARNINGS
-
+#define  SIZE 5
 void removeDirFile(const char* dirPath){
 	
 	long Handle;
@@ -81,15 +81,13 @@ void deleteDirAndFile(const char* dirPath){
 
 void add_zero(int n_, char *Out)
 {
-	char n[200];
-	char NUM[100];
+	char n[200] = {NULL};
 
-	strcpy(NUM, "0");
 	_itoa(n_, n, 10);
 
 	int size_ = strlen(n);
 	for (int i = 0; i < 4 - size_; i++){
-		strcat(Out, NUM);
+		strcat(Out, "0");
 	}
 	strcat(Out, n);
 }
@@ -113,6 +111,9 @@ void cutImg(const char * ori_filename, const char * save_split_path){
 	if (im_ori.cols > cutWid && im_ori.rows > cutHei){
 
 		for (int i = 0; i*cutStep < im_ori.rows; i++){
+			
+			char *Outi= (char *)malloc(SIZE*sizeof(char));
+			
 			cutBeginY = cutStep*i;
 
 			if ((cutBeginY + CUTHEI)>im_ori.rows){
@@ -132,18 +133,34 @@ void cutImg(const char * ori_filename, const char * save_split_path){
 
 				char imgTempName[200];
 				strcpy(imgTempName, save_split_path);
-				char Outi[4] = {};
+
+				
+				memset(Outi, 0, SIZE * sizeof(char));
+				char *Outj = (char *)malloc(SIZE * sizeof(char));
+				memset(Outj, 0, SIZE * sizeof(char));
+
+				/*
+				char Outi[4] = { NULL };
+				char Outj[4] = { NULL };
+				*/
+
 				add_zero(i, Outi);
 				strcat(imgTempName, Outi);
 				strcat(imgTempName, "_");
-				char Outj[4] = {};
+				
 				add_zero(j, Outj);
 				strcat(imgTempName, Outj);
 				strcat(imgTempName, ".jpg");
 
 				if (imgTemp.cols>10 && imgTemp.rows>10)
 					cv::imwrite(imgTempName, imgTemp);
+				//一定要释放内存
+				free(Outj);
+				Outj = NULL;
 			}
+
+			free(Outi);
+			Outi = NULL;
 		}
 	}
 }

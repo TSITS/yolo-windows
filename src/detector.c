@@ -1242,7 +1242,7 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
 void run_detector(char * datacfg, char *cfg, char *weights, char *filename, float thresh, char *rect_txt)
 {
 	float hier_thresh = 0.5;
-	int dont_show = 0;
+	int dont_show = 1;
 	int ext_output = 0;
 	int save_labels = 0;
 	FILE *fp;

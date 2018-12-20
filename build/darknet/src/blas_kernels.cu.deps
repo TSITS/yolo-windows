@@ -309,16 +309,16 @@ c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_fp16.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\library_types.h
 F:\VS2013\anzhuang\VC\include\assert.h
 F:\VS2013\anzhuang\VC\include\crtdefs.h
-d:\54\yolov3-windows_cut\src\blas.h
-d:\54\yolov3-windows_cut\src\cuda.h
+d:\gitpro\largeimagedetection-yolo-windows\src\blas.h
+d:\gitpro\largeimagedetection-yolo-windows\src\cuda.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\curand.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cublas_v2.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cudnn.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\driver_types.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h
-d:\54\yolov3-windows_cut\src\utils.h
+d:\gitpro\largeimagedetection-yolo-windows\src\utils.h
 F:\VS2013\anzhuang\VC\include\stdio.h
 F:\VS2013\anzhuang\VC\include\crtdefs.h
 F:\VS2013\anzhuang\VC\include\swprintf.inl
-d:\54\yolov3-windows_cut\src\list.h
+d:\gitpro\largeimagedetection-yolo-windows\src\list.h

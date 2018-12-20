@@ -15,11 +15,11 @@
 	//#include "opencv2/opencv.hpp"
 #endif
 
-extern  void removeDirFile(const char* dirPath);
-extern  void deleteDirAndFile(const char* dirPath);
-extern  void add_zero(int n_, char *Out);
-extern  void cutImg(const char * ori_filename, const char * save_split_path);
-extern  void cutAndSaveBigImage(const char* dirPath, const char * ori_filename);
+//extern  void removeDirFile(const char* dirPath);
+//extern  void deleteDirAndFile(const char* dirPath);
+//extern  void add_zero(int n_, char *Out);
+//extern  void cutImg(const char * ori_filename, const char * save_split_path);
+//extern  void cutAndSaveBigImage(const char* dirPath, const char * ori_filename);
 
 typedef struct {
 	int left;
@@ -35,8 +35,8 @@ void bigImgDetect(const char* datacfg, const char* cfg, const char* weights, con
 	run_detector(datacfg, cfg, weights, filename, thresh, rect_txt);
 
 	image im_ori = load_image(ori_filename, 0, 0, 3);
-	//int width = im_ori.h * .006; //Ïß¿í
-	int width = 1;
+	int width = im_ori.h * .003; //Ïß¿í
+	//int width = 1;
 	if (width < 1)
 		width = 1;
 	fin = fopen(rect_txt, "r");
@@ -62,8 +62,8 @@ void bigImgDetect(const char* datacfg, const char* cfg, const char* weights, con
 	}
 	fclose(fin);
 	cvNamedWindow("ori_im", 0);
-	save_image(im_ori, "LargeImagePre");
 	show_image(im_ori, "ori_im");
+	save_image(im_ori, "LargeImagePre");
 	free_image(im_ori);
 	
 	cvWaitKey(0);
@@ -84,7 +84,7 @@ int main(int argc, char **argv)
 	char ori_filename[] = "x64\\data\\panorama.jpg";
 	char filename[] = "x64\\data\\testSplit";
 	char rect_txt[] = "detectRect.txt";
-	float thresh = 0.01;
+	float thresh = 0.1;
 
 	bigImgDetect(datacfg, cfg, weights, filename, ori_filename, rect_txt, thresh);
 

@@ -307,8 +307,8 @@ F:\VS2013\anzhuang\VC\include\math.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\vector_types.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_fp16.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\library_types.h
-d:\54\yolov3-windows_cut\src\avgpool_layer.h
-d:\54\yolov3-windows_cut\src\image.h
+d:\gitpro\largeimagedetection-yolo-windows\src\avgpool_layer.h
+d:\gitpro\largeimagedetection-yolo-windows\src\image.h
 F:\VS2013\anzhuang\VC\include\stdio.h
 F:\VS2013\anzhuang\VC\include\crtdefs.h
 F:\VS2013\anzhuang\VC\include\swprintf.inl
@@ -317,23 +317,23 @@ F:\VS2013\anzhuang\VC\include\crtdefs.h
 F:\VS2013\anzhuang\VC\include\crtwrn.h
 F:\VS2013\anzhuang\VC\include\crtdefs.h
 F:\VS2013\anzhuang\VC\include\math.h
-d:\54\yolov3-windows_cut\src\box.h
-d:\54\yolov3-windows_cut\src\cuda.h
+d:\gitpro\largeimagedetection-yolo-windows\src\box.h
+d:\gitpro\largeimagedetection-yolo-windows\src\cuda.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\curand.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cublas_v2.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cudnn.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\driver_types.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h
-d:\54\yolov3-windows_cut\src\layer.h
-d:\54\yolov3-windows_cut\src\activations.h
+d:\gitpro\largeimagedetection-yolo-windows\src\layer.h
+d:\gitpro\largeimagedetection-yolo-windows\src\activations.h
 F:\VS2013\anzhuang\VC\include\math.h
-d:\54\yolov3-windows_cut\src\tree.h
-d:\54\yolov3-windows_cut\src\network.h
+d:\gitpro\largeimagedetection-yolo-windows\src\tree.h
+d:\gitpro\largeimagedetection-yolo-windows\src\network.h
 F:\VS2013\anzhuang\VC\include\stdint.h
 F:\VS2013\anzhuang\VC\include\crtdefs.h
-d:\54\yolov3-windows_cut\src\data.h
+d:\gitpro\largeimagedetection-yolo-windows\src\data.h
 F:\VS2013\anzhuang\VC\include\errno.h
 F:\VS2013\anzhuang\VC\include\crtdefs.h
-d:\54\yolov3-windows_cut\src\matrix.h
-d:\54\yolov3-windows_cut\src\list.h
+d:\gitpro\largeimagedetection-yolo-windows\src\matrix.h
+d:\gitpro\largeimagedetection-yolo-windows\src\list.h
